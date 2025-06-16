@@ -6,7 +6,7 @@ import PatientDetails from "../components/home/PatientDetails";
 import LabResults from "../components/home/LabResults";
 import PatientList from "../components/home/patientList";
 import { fetchPatients } from "../api/patient";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo.png";
 
 const Home = () => {
   const [patients, setPatients] = useState([]);
@@ -40,13 +40,14 @@ const Home = () => {
 
   if (loading)
     return (
-      <div className="p-4 flex justify-center ">
-        {" "}
-        <img
-          src={logo}
-          alt="Clinic Logo"
-          className="flex place-center animate-pulse w-78 h-screen"
-        />
+      <div className="p-4 flex justify-center  h-screen ">
+        <div className="  self-center ">
+          <img
+            src={logo}
+            alt="Clinic Logo"
+            className="self-auto animate-pulse w-94 h-36 p-6 "
+          />
+        </div>
       </div>
     );
   if (error) return <div className="p-4 text-red-500">Error: {error}</div>;
