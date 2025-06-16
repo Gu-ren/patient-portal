@@ -4,7 +4,7 @@ import DiagnosisHistory from "../components/home/DiagnosisHistory";
 import DiagnosticList from "../components/home/DiagnosticList";
 import PatientDetails from "../components/home/PatientDetails";
 import LabResults from "../components/home/LabResults";
-import PatientList from "../components/home/patientList";
+import PatientList from "../components/home/PatientList";
 import { fetchPatients } from "../api/patient";
 import logo from "../assets/logo.png";
 
